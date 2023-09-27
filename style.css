@@ -1,0 +1,459 @@
+
+.calculator {
+    display: block;
+    width: 500px;
+    height: 476px;
+    /* margin: auto auto auto auto; */
+    /* margin: calc(50vh - 150px) auto 0 auto; */
+    margin: 70px auto 0 auto;
+    border-radius: 4px;
+    background-color: #333;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+
+.lcdBorder {
+    border-radius: 12px;
+    display: block;
+    z-index: 1;
+    background-color: #222816;
+    width: 430px;
+    height: 105px;
+    position: absolute;
+    margin: 30px auto auto 30px;
+    border-radius: 3px;
+    box-shadow: 0 5px 20px .05px #130f0a inset,
+        5px 0 10px -4px #130f0a inset,
+        -0.5px 0 3px 1px #130f0a inset,
+        0 0 0 2px rgba(0, 0, 0, 1),
+        0 65px 50px -10px rgba(0, 0, 0, -0.05);
+}
+
+.lcd {
+    /* display: block; */
+    border-radius: 15px;
+    z-index: 2;
+    background-color: #99a883;
+    width: 370px;
+    height: 60px;
+    position: absolute;
+    margin: 50px auto auto 60px;
+    border-radius: 3px;
+    box-shadow: 0 5px 20px .05px #130f0a inset,
+        5px 0 10px -4px #130f0a inset,
+        -0.5px 0 3px 1px #130f0a inset,
+        0 0 0 2px rgba(0, 0, 0, 1),
+        0 65px 50px -10px rgba(0, 0, 0, -0.05);
+}
+.input{
+    display: inline-block;
+    font-family: "Orbitron", sans-serif;
+    /* opacity: .5; */
+    /* margin: auto auto auto 150px; */
+    width: 361px;
+    height: 55px;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+    border-radius: 12px
+    
+
+}
+
+
+.lcd p:nth-child(1) {
+    display: inline-block;
+    font-family: "Orbitron", sans-serif;
+    /* opacity: .5; */
+    margin: auto auto auto 150px;
+    font-size: .6em;
+}
+
+.lcd p:nth-child(2) {
+    display: inline-block;
+    font-family: "Orbitron", sans-serif;
+    /* opacity: .5; */
+    margin: auto auto auto 150px;
+    font-size: .6em;
+}
+
+.lcd p:nth-child(3) {
+    font-family: "Orbitron", sans-serif;
+    margin: 0px auto auto -120px;
+    font-size: 1.6em;
+    transform: scaleY(1.5);
+}
+
+.onoff {
+    display: block;
+    z-index: 2;
+    background-color: black;
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    margin: 35px auto auto 630px;
+    border-radius: 3px;
+    box-shadow: 0 5px 20px .05px #130f0a inset,
+        5px 0 10px -4px #130f0a inset,
+        -0.5px 0 3px 1px #130f0a inset,
+        0 0 0 2px rgba(0, 0, 0, 1),
+        0 65px 50px -10px rgba(0, 0, 0, -0.05);
+}
+
+.onoffinline1 {
+    display: block;
+    z-index: 3;
+    background-color: #333;
+    width: 1.5px;
+    height: 30px;
+    position: absolute;
+    margin: 30px auto auto 885px;
+}
+
+.onoffinline2 {
+    display: block;
+    z-index: 3;
+    background-color: #333;
+    width: 1.5px;
+    height: 30px;
+    position: absolute;
+    margin: 30px auto auto 890px;
+}
+
+.onoffinline3 {
+    display: block;
+    z-index: 3;
+    background-color: #333;
+    width: 1.5px;
+    height: 30px;
+    position: absolute;
+    margin: 30px auto auto 895px;
+}
+
+.onoffinline4 {
+    display: block;
+    z-index: 3;
+    background-color: #333;
+    width: 1.5px;
+    height: 30px;
+    position: absolute;
+    margin: 30px auto auto 900px;
+}
+
+.onoffinline5 {
+    display: block;
+    z-index: 3;
+    background-color: #333;
+    width: 1.5px;
+    height: 30px;
+    position: absolute;
+    margin: 30px auto auto 905px
+}
+#black {
+    background-color: black;
+    display: block;
+    z-index: 3;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    border-radius: 1px;
+    box-shadow: 3px 3px 3px 0 #102027 inset,
+        3px 5px 3px -5px #aeaeae inset,
+        3px 3px 0 1px #102027 inset,
+        0 0 0px 3px rgba(0, 0, 0, 4),
+        3px 3px 4px 3px rgba(0, 0, 0, 4),
+        0 0 50px -10px rgba(0, 0, 0, -0.05);
+}
+#gray {
+    background-color: #333;
+    display: block;
+    z-index: 3;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    border-radius: 1px;
+    box-shadow: 3px 3px 3px 0 #333 inset,
+        3px 5px 3px -5px #aeaeae inset,
+        3px 3px 0 1px #4f5b62 inset,
+        0 0 0px 3px rgba(0, 0, 0, 4),
+        3px 3px 4px 3px rgba(0, 0, 0, 4),
+        0 0 50px -10px rgba(0, 0, 0, -0.05);
+}
+#orange {
+    display: block;
+    z-index: 3;
+    background-color: #d84315;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    border-radius: 1px;
+    box-shadow: 3px 3px 3px 0 #b91400 inset,
+        3px 5px 3px -5px #aeaeae inset,
+        3px 3px 0 1px #b91400 inset,
+        0 0 0px 3px rgba(0, 0, 0, 4),
+        3px 3px 4px 3px rgba(0, 0, 0, 4),
+        0 0 50px -10px rgba(0, 0, 0, -0.05);
+}
+.blackkey1 {
+    margin: 180px auto auto 50px;
+}
+
+.blackkey2 {
+    margin: 180px auto auto 120px;
+
+}
+
+.blackkey3 {
+    margin: 180px auto auto 192px;
+}
+
+.blackkey4 {
+    background-color: #333;
+    margin: 180px auto auto 260px;
+}
+
+.blackkey5 {
+    margin: 180px auto auto 330px;
+}
+
+.blackkey6 {
+    margin: 180px auto auto 400px;
+}
+
+.blackkey7 {
+    margin: 240px auto auto 50px;
+}
+
+.blackkey8 {
+    margin: 240px auto auto 120px;
+}
+
+.blackkey9 {
+    margin: 240px auto auto 192px;
+}
+
+.blackkey10 {
+    margin: 240px auto auto 260px;
+}
+
+.blackkey11 {
+    margin: 240px auto auto 330px;
+}
+
+.blackkey12 {
+    margin: 240px auto auto 400px;
+}
+
+.blackkey13 {
+    margin: 300px auto auto 50px;
+}
+
+.blackkey14 {
+    margin: 300px auto auto 120px;
+}
+
+.blackkey15 {
+    margin: 300px auto auto 192px;
+}
+
+.blackkey16 {
+    margin: 300px auto auto 260px;
+}
+
+.blackkey17 {
+    margin: 300px auto auto 330px;
+}
+
+.blackkey18 {
+    margin: 300px auto auto 400px;
+}
+
+.blackkey19 {
+    margin: 360px auto auto 50px;
+}
+
+.blackkey20 {
+    margin: 360px auto auto 120px;
+}
+
+.blackkey21 {
+    margin: 360px auto auto 192px;
+}
+
+.blackkey22 {
+    margin: 360px auto auto 260px;
+}
+
+.blackkey23 {
+    margin: 360px auto auto 330px;
+}
+
+.blackkey24 {
+    margin: 360px auto auto 400px;
+}
+
+.blackkey25 {
+    margin: 420px auto auto 50px;
+}
+
+.blackkey26 {
+    margin: 420px auto auto 120px;
+}
+
+.blackkey27 {
+    margin: 420px auto auto 192px;
+}
+
+.blackkey28 {
+    margin: 420px auto auto 260px;
+}
+
+.blackkey29 {
+    margin: 420px auto auto 330px;
+}
+
+.blackkey30 {
+    margin: 420px auto auto 400px;
+}
+
+#white-text {
+    font-family: "Archivo Narrow", sans-serif;
+    color: white;
+    margin: auto;
+    padding: 10px 0;
+    text-align: center;
+    font-size: .9em;
+    font-weight: 700;
+}
+
+.b1 {
+    font-size: .9em !important;
+}
+
+.b2 {
+    padding: 8px 0 !important;
+    font-size: .85em !important;
+}
+
+.b3 {
+    padding: 8px 0 !important;
+    font-size: .85em !important;
+}
+
+.b4 {
+    font-size: .75em !important;
+    transform: scaleY(1.5) !important;
+}
+
+.b5 {
+    font-size: 1em !important;
+    font-weight: 600 !important;
+}
+
+.b6 {
+    font-size: 1em !important;
+    font-weight: 600 !important;
+}
+
+.b7 {
+    padding: 5px 0 !important;
+    font-size: 1.2em !important;
+}
+
+.b8 {
+    padding: 5px 0 !important;
+    font-size: 1.2em !important;
+}
+
+.b9 {
+    padding: 5px 0 !important;
+    font-size: 1.2em !important;
+}
+
+.b10 {
+    padding: 5px 0 !important;
+    font-size: 1.2em !important;
+}
+
+.b13 {
+    padding: 5px 0 !important;
+    font-size: 1.2em !important;
+}
+
+.b14 {
+    padding: 5px 0 !important;
+    font-size: 1.2em !important;
+}
+
+.b15 {
+    padding: 5px 0 !important;
+    font-size: 1.2em !important;
+}
+
+.b16 {
+    padding: 3px 0 !important;
+    font-size: 2.2em !important;
+}
+
+.b19 {
+    padding: 5px 0 !important;
+    font-size: 1.2em !important;
+}
+
+.b20 {
+    padding: 5px 0 !important;
+    font-size: 1.2em !important;
+}
+
+.b21 {
+    padding: 5px 0 !important;
+    font-size: 1.2em !important;
+}
+
+.b22 {
+    padding: 5px 0 !important;
+    font-size: 1.2em !important;
+    transform: scaleX(2.5) !important;
+}
+
+.b23 {
+    color: white !important;
+    margin: -20px !important;
+    /*   margin: -15px auto auto auto !important; */
+    font-size: 1.5em !important;
+}
+
+.b24 {
+    margin: -10px !important;
+    font-size: 1.5em !important;
+}
+
+.b25 {
+    margin: -5px auto auto 3px !important;
+    font-size: 1.2em !important;
+}
+
+.b26 {
+    margin: -25px auto auto 5px !important;
+    font-size: 2em !important;
+}
+
+.b27 {
+    padding: 8px 0 !important;
+    font-size: 1em !important;
+}
+
+.b28 {
+    padding: 3px 0 !important;
+    font-size: 1.5em !important;
+}
+
+.b29 {
+    padding: 3px 0 0 5px !important;
+    font-size: 1em !important;
+}
+
+.b30 {
+    padding: 2px 0 0 5px !important;
+    font-size: 1.5em !important;
+}
